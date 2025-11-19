@@ -2539,7 +2539,7 @@
 		)
 		(uuid 4a3fa8c3-975c-4b28-acd4-ea1ba95c4b05)
 	)
-	(text "Input Connectors\n"
+	(text "Output Connectors\n"
 		(exclude_from_sim no)
 		(at 158.75 60.96 0)
 		(effects
@@ -2549,7 +2549,7 @@
 		)
 		(uuid "92b65a92-20c4-4d59-b71c-e336bbc00543")
 	)
-	(text "Output Connectors"
+	(text "Input Connectors\n"
 		(exclude_from_sim no)
 		(at 191.77 83.82 0)
 		(effects
@@ -2570,6 +2570,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b113b46-d93f-465a-801f-05fa0140912d")
+	)
+	(junction
+		(at 157.48 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92e515a4-406d-414e-8f83-7ddeea80f512")
 	)
 	(junction
 		(at 153.67 83.82)
@@ -2725,6 +2731,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 125.73) (xy 163.83 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b897b2b-26ac-46d4-affe-f7adc0a7fe68")
+	)
+	(wire
+		(pts
 			(xy 177.8 95.25) (xy 177.8 102.87)
 		)
 		(stroke
@@ -2812,16 +2828,6 @@
 			(type default)
 		)
 		(uuid "42d92980-2ad9-416b-9b13-7a6da4aa7d34")
-	)
-	(wire
-		(pts
-			(xy 203.2 134.62) (xy 148.59 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43f89f82-8f82-436c-b7d3-f7ed6db2bf75")
 	)
 	(wire
 		(pts
@@ -2945,6 +2951,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 134.62) (xy 203.2 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81d958ab-7d54-4f46-ad72-6a09283d47c6")
+	)
+	(wire
+		(pts
 			(xy 149.86 111.76) (xy 140.97 111.76)
 		)
 		(stroke
@@ -3015,6 +3031,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 125.73) (xy 163.83 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc6a44ef-014c-47ed-9d5c-ca620ad94796")
+	)
+	(wire
+		(pts
 			(xy 153.67 77.47) (xy 153.67 83.82)
 		)
 		(stroke
@@ -3042,6 +3068,26 @@
 			(type default)
 		)
 		(uuid "d3d188d1-8be2-4b53-979a-3b9c1dc7de7a")
+	)
+	(wire
+		(pts
+			(xy 157.48 133.35) (xy 157.48 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d85816ce-61ac-4abf-b2b7-f02bbd9469eb")
+	)
+	(wire
+		(pts
+			(xy 148.59 134.62) (xy 157.48 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d969d8db-1e75-42b2-b05e-07bdb7e3248f")
 	)
 	(wire
 		(pts
@@ -3347,6 +3393,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 157.48 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fec63b0-73b5-4728-94b1-e2c543da4773")
+		(property "Reference" "#PWR09"
+			(at 157.48 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 157.48 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0782c7b1-03f2-4d19-9943-777999163f3f")
+		)
+		(instances
+			(project "LED sniffer project"
+				(path "/5a827150-22a6-4d01-a14f-68ea2680ab8e"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 205.74 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3406,6 +3518,76 @@
 			(project "LED sniffer project"
 				(path "/5a827150-22a6-4d01-a14f-68ea2680ab8e"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Resistors:33k")
+		(at 157.48 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "379d4e39-18a7-4b3f-b0c2-fffe64047d38")
+		(property "Reference" "R4"
+			(at 160.02 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33k"
+			(at 160.02 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 161.798 137.541 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 137.922 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "33kΩ, 1/4W Resistor"
+			(at 157.48 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e566f12a-c672-4d74-bda3-d74969420765")
+		)
+		(pin "1"
+			(uuid "a062363c-860c-46dc-b40f-67dd8b99df42")
+		)
+		(instances
+			(project "LED sniffer project"
+				(path "/5a827150-22a6-4d01-a14f-68ea2680ab8e"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3604,6 +3786,76 @@
 			(project "LED sniffer project"
 				(path "/5a827150-22a6-4d01-a14f-68ea2680ab8e"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Resistors:22k")
+		(at 157.48 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7483c8f3-d2a2-4cb7-8a21-d02fcd88f297")
+		(property "Reference" "R3"
+			(at 160.02 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22k"
+			(at 160.02 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 161.798 128.651 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 129.032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "22kΩ, 1/4W Resistor"
+			(at 157.48 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "96312490-4adb-496c-ba53-866e89280166")
+		)
+		(pin "1"
+			(uuid "40f9acea-ad15-4196-bb83-7df74d225659")
+		)
+		(instances
+			(project "LED sniffer project"
+				(path "/5a827150-22a6-4d01-a14f-68ea2680ab8e"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4138,7 +4390,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 170.688 114.681 0)
 			(effects
 				(font
@@ -4406,7 +4658,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 170.688 123.571 0)
 			(effects
 				(font
