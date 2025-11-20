@@ -2528,8 +2528,8 @@
 		(uuid 30bd9154-4428-4d55-ae8b-bd2dbdc7c480)
 	)
 	(rectangle
-		(start 49.53 132.08)
-		(end 73.66 149.86)
+		(start 48.26 121.92)
+		(end 76.2 147.32)
 		(stroke
 			(width 0)
 			(type default)
@@ -2540,8 +2540,8 @@
 		(uuid 3bfacd61-ab4a-473b-ba43-f09c76c091c4)
 	)
 	(rectangle
-		(start 184.15 86.36)
-		(end 217.17 119.38)
+		(start 185.42 83.82)
+		(end 218.44 119.38)
 		(stroke
 			(width 0)
 			(type default)
@@ -2551,9 +2551,9 @@
 		)
 		(uuid 4a3fa8c3-975c-4b28-acd4-ea1ba95c4b05)
 	)
-	(text "Output Connectors\nOption to drive output with 1, 2, or 3 GPIO pins\n"
+	(text "Output Connectors\nOption to drive output with 1, 2, \nor 3 GPIO pins\n"
 		(exclude_from_sim no)
-		(at 209.55 83.82 0)
+		(at 201.93 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2581,9 +2581,9 @@
 		)
 		(uuid "cef085ea-017b-498b-a58e-f36482a01756")
 	)
-	(text "Redundant connector"
+	(text "Redundancy connector for\nalternate approach"
 		(exclude_from_sim no)
-		(at 60.96 134.62 0)
+		(at 62.23 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2823,16 +2823,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 138.43) (xy 80.01 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fd5c4ba-279a-4eb1-8965-c6a79eb1cf90")
-	)
-	(wire
-		(pts
 			(xy 205.74 106.68) (xy 205.74 113.03)
 		)
 		(stroke
@@ -2840,16 +2830,6 @@
 			(type default)
 		)
 		(uuid "3ac14bdf-a541-47b0-bce3-403b3bcadef1")
-	)
-	(wire
-		(pts
-			(xy 71.12 143.51) (xy 80.01 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "407d186a-3652-4ca9-b138-a4f9d86ed078")
 	)
 	(wire
 		(pts
@@ -2873,6 +2853,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 140.97) (xy 80.01 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4309e32e-93b6-4c21-b880-d3cd47737b94")
+	)
+	(wire
+		(pts
 			(xy 149.86 73.66) (xy 149.86 66.04)
 		)
 		(stroke
@@ -2880,16 +2870,6 @@
 			(type default)
 		)
 		(uuid "43fa4735-23e8-4422-8865-57d7cb16cb93")
-	)
-	(wire
-		(pts
-			(xy 71.12 146.05) (xy 77.47 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47371e74-5e17-4789-9651-3d40ecbbe668")
 	)
 	(wire
 		(pts
@@ -2943,6 +2923,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 143.51) (xy 63.5 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51efaa6a-cb16-44cf-ba6b-cacb50794777")
+	)
+	(wire
+		(pts
 			(xy 208.28 115.57) (xy 198.12 115.57)
 		)
 		(stroke
@@ -2953,6 +2943,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 138.43) (xy 80.01 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "566b3201-374d-4c8e-b66f-4fbccb3f7399")
+	)
+	(wire
+		(pts
 			(xy 153.67 73.66) (xy 149.86 73.66)
 		)
 		(stroke
@@ -2960,6 +2960,16 @@
 			(type default)
 		)
 		(uuid "5b1ca0e9-20f1-413e-bfe4-ae9f04afa8da")
+	)
+	(wire
+		(pts
+			(xy 60.96 146.05) (xy 60.96 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c435ea5-5d8c-43f3-a508-379479df2a65")
 	)
 	(wire
 		(pts
@@ -3020,6 +3030,26 @@
 			(type default)
 		)
 		(uuid "821aace8-e675-4e83-ab1e-2f78e4666c6e")
+	)
+	(wire
+		(pts
+			(xy 66.04 140.97) (xy 66.04 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e974a48-acdd-496c-841d-6afe6e5d4384")
+	)
+	(wire
+		(pts
+			(xy 63.5 143.51) (xy 80.01 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9010dd65-1bb0-4bc0-b7b6-f9117841fb47")
 	)
 	(wire
 		(pts
@@ -3193,16 +3223,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 140.97) (xy 80.01 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eeb4617e-ec26-44cc-acdf-11f071cc62d7")
-	)
-	(wire
-		(pts
 			(xy 135.89 73.66) (xy 133.35 73.66)
 		)
 		(stroke
@@ -3210,6 +3230,16 @@
 			(type default)
 		)
 		(uuid "f4a253c1-7dda-4912-8986-65500518cdc9")
+	)
+	(wire
+		(pts
+			(xy 60.96 146.05) (xy 77.47 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f692ec78-e9d1-4530-93c0-9e550f646bfb")
 	)
 	(label "5V"
 		(at 97.79 81.28 0)
@@ -3542,7 +3572,7 @@
 	)
 	(symbol
 		(lib_id "PCM_4ms_Connector:Conn_01x04")
-		(at 66.04 143.51 180)
+		(at 63.5 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3550,7 +3580,7 @@
 		(dnp no)
 		(uuid "2330e4cd-8b29-4a95-9b4a-e645d08f7ea3")
 		(property "Reference" "J6"
-			(at 60.96 142.24 90)
+			(at 64.77 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3558,7 +3588,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 63.5 142.24 90)
+			(at 64.77 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3566,7 +3596,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 66.04 150.495 0)
+			(at 56.515 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3575,7 +3605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 143.51 0)
+			(at 63.5 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3584,7 +3614,7 @@
 			)
 		)
 		(property "Description" "HEADER 1x4 MALE PINS 0.100” 180deg"
-			(at 66.04 143.51 0)
+			(at 63.5 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3593,7 +3623,7 @@
 			)
 		)
 		(property "Specifications" "HEADER 1x4 MALE PINS 0.100” 180deg"
-			(at 69.215 128.905 0)
+			(at 78.105 136.525 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3603,7 +3633,7 @@
 			)
 		)
 		(property "Manufacturer" "TAD"
-			(at 68.58 134.112 0)
+			(at 72.898 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3613,7 +3643,7 @@
 			)
 		)
 		(property "Part Number" "1-0401FBV0T"
-			(at 68.58 132.588 0)
+			(at 74.422 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
