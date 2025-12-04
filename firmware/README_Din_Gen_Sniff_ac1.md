@@ -28,3 +28,5 @@ It uses a PIO state machine to sample the WS2812 data stream and reconstruct the
 
 For best results, press the button **well inside** the time window when a single solid color (red, green, or blue) is active.  
 Pressing during a transition between colors can produce noisy or less stable target values, which may lead to weaker or inconsistent matches.
+
+CURRENTLY THONNY IS BEING USED TO START AND STOP THE CODE FOR BOTH PICOS
